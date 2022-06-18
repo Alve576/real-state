@@ -3,11 +3,15 @@ import { Menu, MenuButton, MenuList, MenuItem, IconButton, Flex, Box, Spacer } f
 import { FcMenu, FcHome, FcAbout } from 'react-icons/fc';
 import { BsSearch } from 'react-icons/bs';
 import { FiKey } from 'react-icons/fi';
+import logo from '../assets/images/logo-dark.svg'
+import Image from 'next/image';
 
 const Navbar = () => (
   <Flex p='2' borderBottom='1px' borderColor='gray.100'>
     <Box fontSize='3xl' color='blue.400' fontWeight='bold'>
-      <Link href='/' paddingLeft='2'>Realtor</Link>
+      <Link href='/' paddingLeft='2'>
+        <Image src={logo}/>
+      </Link>
     </Box>
     <Spacer />
     <Box>
